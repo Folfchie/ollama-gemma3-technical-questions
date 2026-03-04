@@ -62,18 +62,3 @@ The script prints the generated response from the Gemma 3 model to the terminal.
 
 *   The script assumes Ollama is running and the specified Gemma 3 model is available. If either of these conditions is not met, the script will likely encounter an error during the `chat` function call.
 *   File I/O errors may occur if the `infile` is not found or if there are issues writing to the output file.
-# Synopsis
-
-This script combines user input (`message` variable) with a set of predefined instructions (`instructions` variable) and sends the result to a Gemma 3 model running locally via Ollama.
-The output is printed to the terminal and can optionally be saved to a markdown file.
-
-# Usage
-
-```bash
-$ python script.py
-```
-
-# Notes
-
-- The `autosave` variable can be set to True or False. If set to False, the user will be prompted if they want to save the output after it is printed to the terminal.
-- Setting the `infile` variable to None allows you to type a prompt from the terminal when executing the script.
